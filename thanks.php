@@ -1,3 +1,15 @@
+<?php
+
+$firstName = ($_POST["firstname"]);
+$lastName = ($_POST["lastname"]);
+$email = ($_POST["email"]);
+$tel = ($_POST["telephone"]);
+$select = ($_POST["select-choix"]);
+$message = ($_POST["contact-message"]);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,26 +21,18 @@
     
 </head>
 
-<body> 
-     
-<?php
-    $firstName = ($_POST["firstname"]);
-    $lastName = ($_POST["lastname"]);
-    $email = ($_POST["email"]);
-    $tel = ($_POST["telephone"]);
-    $select = ($_POST["select-choix"]);
-    $message = ($_POST["contact-message"]);
-?>
-          
+<body>  
+
 <div> 
 
 Merci <?= $firstName ?> <?=$lastName?> de nous avoir contacté à propos de “<?=$select?>”.
 
 Un de nos conseillers vous contactera soit à l’adresse <?=$email?> ou par téléphone au <?=$tel?> dans les plus brefs délais pour traiter votre demande : 
 
-<?=$message?> </p>
+<?=$message?>
 
 </div>
+
             
     
 </body>
